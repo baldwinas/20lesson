@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}Guess the secret number{% endblock title %}</title>
+
+        <link rel="stylesheet" href="/static/css/style.css">
+    </head>
+
+    <body>
+        <h1>"Guess the secret number" game!</h1>
+        <h2>Choose number from 1 to 30.</h2>
+        <p>If you want to quit press "q"</p>
+
+        {% block content %}
+        {% endblock content %}
+    </body>
+</html>

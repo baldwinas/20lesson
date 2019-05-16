@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block title %}Success{% endblock title %}
+
+{% block content %}
+    <h3>{{ message }}</h3>
+    {% if message[:1] == "A": %}
+        <p></p>
+    {% else: %}
+        <p><a href="/">Do you want to try one more time?</a></p>
+    {% endif %}
+{% endblock content %}
